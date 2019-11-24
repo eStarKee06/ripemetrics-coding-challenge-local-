@@ -72,7 +72,6 @@ class Manager extends React.Component {
     localSavedStudents.push(Object.assign({}, this.currentStudentData));
     this.setState({ savedStudents: localSavedStudents }, () => {this.addExtremes();}); // callback to prevent delay in changing state
     this.resetCurrentStudentData();
-    //this.addExtremes();
   }
 
   calculatePts(subjectGrades) {// calculate student GPA based off of input
